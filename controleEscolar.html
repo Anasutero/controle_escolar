@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle escolar</title>
+</head>
+<body>
+    <h1>Controle escolar</h1>
+
+    <fieldset class="conteiner-exemplos">
+
+        <div class="conteiner-mensagem">
+
+            <label for="nome" class="item label">NOME:</label>
+            <input id="nome" class="item campo" type="text" />
+
+            
+            <label for="nota" class="item label">NOTA FINAL:</label>
+            <input id="nota" class="item campo" type="number" step="0.1"/>
+
+            
+            <label for="frequencia" class="item label">FREQUENCIA:</label>
+            <input id="frequencia" class="item campo" type="number" step="0.1"/>
+
+            <button type="button" onclick="verificarAprovacao()"  id="btn-calcular" class="item botao">Calcular</button><br><br>
+
+
+            <label for="resultado" class="item label">RESULTADO:</label>
+            <p id="resultado" class="item saida"></p>    
+             
+
+        </div>
+
+    </fieldset>
+
+    <script src="./controleEscolar.js"></script>
+</body>
+</html>
