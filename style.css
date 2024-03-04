@@ -1,6 +1,12 @@
-*{
-    background-color: rgb(216, 90, 174);
-
+body {
+    background-image: url('https://img.freepik.com/fotos-premium/fundo-rosa-com-fundo-rosa-e-a-palavra-amor-nele_900396-6371.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa enquanto a página é rolada */
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: black;
 }
 
 h1{
@@ -9,20 +15,61 @@ h1{
 }
 .item {
     width: 100%;
+    text-align: center; /* Centraliza o conteúdo dentro do item */
 }
+
+.campo,
+.saida,
+.botao {
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Remova a duplicação da definição de .label */
+.label {
+    margin-bottom: 0px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+/* Adicione a cor de fundo para a saída */
+.saida {
+    background-color: rgb(224, 213, 215);
+}
+
 
 .label {
     margin-bottom: 0px;
     font-weight: 500;
     margin-bottom: 2px;
 }
+.campo,
+.botao,
+.saida {
+    display: block;
+    margin: 0 auto 12px; /* Adiciona uma margem na parte inferior para separar os elementos */
+    width: 400px; /* Define a largura desejada */
+}
+
+/* Remova a largura do campo, pois a largura agora é definida pelo width */
+.campo {
+    width: auto;
+}
+
+/* Adicione a cor de fundo para a saída */
+.saida {
+    background-color: rgb(224, 213, 215);
+}
 
 .campo {
     padding: 10px 5px;
     margin-bottom: 12px;
     border-radius: 5px;
-    background-color: rgb(105, 176, 189);
+    background-color: rgb(238, 151, 216);
     border: none;
+    height: 15px;
+    width: 400px;
 }
 
 .saida {
@@ -33,6 +80,8 @@ h1{
     background-color: var(--fonte-clara);
     padding: 10px 5px;
     border-radius: 5px;
+    height: 15px;
+    width: 300px;
 }
 
 .botao {
@@ -42,7 +91,9 @@ h1{
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    background-color: rgb(187, 241, 117);
+    background-color: rgb(160, 9, 102);
+    border-radius: 5px;
+    color: aliceblue;
 }
 
 .botao p {
@@ -51,7 +102,7 @@ h1{
 }
 
 .botao:hover {
-    background-color: var(--enfase);
+    background-color: rgb(218, 103, 198);
 }
 .saida {
     height: 40px;
@@ -68,4 +119,19 @@ h1{
     margin-bottom: 0px;
     font-weight: 500;
     margin-bottom: 2px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.conteiner-mensagem {
+    background-color: #da61b7;
+    height: 400px;
+    width: 700px; /* Aumentando a largura */
+    text-align: center;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.conteiner-exemplos {
+    background-color: #da61b7;
+    width: 700px; /* Aumentando a largura */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
